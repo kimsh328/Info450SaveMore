@@ -48,7 +48,7 @@ public:
 
 	int withdraw(double value);
 
-	virtual void interest();
+	void interest();
 };
 
 savings::savings(char Anumber[50], double Abalance) : SaveMore(Anumber, Abalance) {
@@ -89,7 +89,7 @@ class checking_account : public SaveMore {
 public:
 	checking_account(char Anumber[100], double Abalance);
 	int withdraw(double value);
-	virtual int order_checks();
+	int order_checks();
 };
 
 checking_account::checking_account(char Anumber[100], double Abalance) : SaveMore(Anumber, Abalance) {
@@ -153,9 +153,9 @@ public:
 
 	int earlyWithdraw(double value);
 
-	virtual void interest();
+	 void interest();
 
-	virtual void display();
+	 void display();
 };
 
 certificate_deposit::certificate_deposit(char Anumber[100], double Abalance, int Aterm) : SaveMore(Anumber, Abalance) {
